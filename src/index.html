@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Book Publishing A/S</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+        body {
+            background-color: #AFE1AF;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .header-name {
+            text-align: center;
+            font-size: 3rem;
+            font-weight: bold;
+        }
+
+        .menu a{
+            text-decoration: none;
+            color: #053f36;
+            padding: 40px;
+            font-size: 1.5rem;
+        }
+        
+        .menu a:hover {
+            color: #097969;
+        }
+
+        .book-name {
+            text-align: left;
+        }
+
+        .content {
+            margin: auto;
+            text-align: left;
+            width: 85%;
+            font-size: .9rem;
+        }
+
+        .buy button {
+            width: 10%;
+            padding: 10px;
+            border-radius: 15%;
+            background-color: white;
+        }
+    
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="header-name">
+            <p>
+                Green Book Publishing
+            </p>
+            <div class="menu">
+               <a href="index.html">Book #1</a>
+               <a href="book2.html">Book #2</a>
+               <a href="book3.html">Book #3</a>
+            </div>
+        </div>
+        
+    </header>  
+
+    <div class="content">
+        <div class="book-name">
+            <h2>Book #1</h2>
+        </div>
+        <div>
+            <p>
+                Description:
+            </p>
+            <p id="change">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis est veritatis numquam dolore ipsum provident optio quia labore debitis ullam, sapiente quis asperiores, voluptatum assumenda eius sit ratione? Ullam quam saepe harum labore nam facere molestias consectetur quidem, alias aut, nulla assumenda iusto totam dignissimos quos ad minus velit pariatur mollitia? Libero provident ipsa incidunt facere doloremque necessitatibus aspernatur, ipsam illo totam pariatur veritatis magni eveniet commodi eum doloribus porro. Dolorum dolor expedita amet accusantium alias, eum doloremque tenetur quaerat quia, deserunt explicabo pariatur ut omnis doloribus incidunt eligendi quasi. Obcaecati nobis consequatur quos vel deserunt neque animi quisquam quia.
+            </p>
+            
+        </div>
+
+        <div class="buy">
+            <p>Price: 1100DKK</p>
+            <button onclick="window.location.href='https://www.youtube.com/watch?v=dQw4w9WgXcQ'" target="_blank">
+                <a>Buy</a>
+            </button>
+        </div>
+        <div>
+            <button id="btn" onclick="changeColor()">
+                Change the color of the text
+            </button>
+        </div>
+    </div>
+
+    <script>
+        function changeColor() {
+            var par = document.getElementById("change");
+            if(par.style.color == "black") {
+                par.style.color = "yellow";
+            }
+            else{
+                par.style.color = "black";
+            }
+        }
+    </script>
+</body>
+</html>
